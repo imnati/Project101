@@ -144,10 +144,6 @@ function selectAnswer(event) {
     }
 
     setTimeout(() => {
-        currentQuestionIndex++; 
-    }, 1000);
-
-    setTimeout(() => {
         currentQuestionIndex++;
 
         // check if there are more questions to show, if not show result
@@ -156,7 +152,7 @@ function selectAnswer(event) {
         } else {
             showResult();
         }
-    }, 1000); 
+    }, 1000);
 }
 
 function showResult() {
@@ -184,5 +180,7 @@ function showResult() {
 function restartQuiz() {
   resultScreen.classList.remove("active");
   startScreen.classList.add("active");
-  // Reset quiz variables
+  currentQuestionIndex = 0;
+  score = 0;
+  scoreSpan.textContent = 0;
 }
