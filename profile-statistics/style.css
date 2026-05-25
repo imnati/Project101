@@ -1,0 +1,24 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  background-color: #1e1e2f;
+  color: white;
+}
+
+.stats-container {
+  margin: 20px;
+  border: dotted gray;
+  min-width: 200px;
+  height: 100px;
+}
+
+@media (max-width: 500px) {
+  body {
+    flex-direction: column;
+  }
+}
