@@ -7,10 +7,12 @@ body {
   justify-content: center;
   font-family: "Courier New", Courier, monospace;
   background-color: #011f7b;
+  overflow: hidden;
 }
 
 h2 {
   color: #ffba09;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
